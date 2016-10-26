@@ -1,0 +1,41 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="jquery.min.js"></script>
+
+<script>
+
+
+$(window).load(function(){
+setTimeout(function(){
+var divs_no = parseInt($(window).width() / 20) * parseInt($(window).height() / 29);
+var elements = "";
+for (i = 0; i < divs_no; i++) {
+
+  elements +="<div id=" + i +"/>";
+}
+$('body').append(elements);
+},500);
+});
+
+// $(document).ready(function(){
+//   var rnNum = parseInt(Math.random()*(divs_no-0)+0);
+//   $("#"+rnNum).animate({backgroundColor: "#00bfff"},3000);
+
+//   // var rnDiv = document.getElementById(rnNum);
+//   // rnDiv.style.background+="deepskyblue";
+//   // rnDiv.style.transition+="all 3.5s";
+//   // rnDiv.style.background+="grey";
+// });
+
+</script>
+
+
+
+
+</head>
+<body >
+    
+
+</body>
+</html>
