@@ -2,6 +2,7 @@
 <head>
 <link rel="stylesheet" href="style.css">
 <script src="jquery.min.js"></script>
+<script src="jquery-ui.js"></script>
 
 <script>
 
@@ -10,32 +11,38 @@ $(window).load(function(){
 setTimeout(function(){
 var divs_no = parseInt($(window).width() / 20) * parseInt($(window).height() / 29);
 var elements = "";
-for (i = 0; i < divs_no; i++) {
 
-  elements +="<div id=" + i +"/>";
+for (i = 0; i < divs_no; i++) {
+  var character = String.fromCharCode(65 + Math.random()*25);
+  elements +="<div id=" + i +"><p>"+character+"</p></div>";
 }
 $('body').append(elements);
+ var rnNum = parseInt(Math.random()*(divs_no-0)+0);
+
 },500);
 });
 
-// $(document).ready(function(){
+// function rn(){
+//   var divs_no = parseInt($(window).width() / 20) * parseInt($(window).height() / 29);
 //   var rnNum = parseInt(Math.random()*(divs_no-0)+0);
-//   $("#"+rnNum).animate({backgroundColor: "#00bfff"},3000);
-
-//   // var rnDiv = document.getElementById(rnNum);
-//   // rnDiv.style.background+="deepskyblue";
-//   // rnDiv.style.transition+="all 3.5s";
-//   // rnDiv.style.background+="grey";
-// });
-
+//   setTimeout(function(){ $("#"+rnNum).animate({backgroundColor:"#00bfff"});},500);
+//   setTimeout(function(){ $("#"+rnNum).animate({backgroundColor:"#2F4F4F"});},2200);
+// }
+// window.onload =function(){
+//   var i=0;
+//   while( i < 10){
+//     rn();
+//     i++;
+//   }
+// }
 </script>
 
 
+ 
 
 
 </head>
-<body >
-    
-
+<body  >
+   
 </body>
 </html>
