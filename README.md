@@ -4,7 +4,7 @@ Website background, display random character in the background in a glowing effe
 
 ## Installation
 
-Download the HTML file with the libraries  and open the index.html file in your browser(tested with chrome).
+Download the zip file and extract it,thenopen the index.html file in your browser(tested with google-chrome).
 
 
 ## Contributing
